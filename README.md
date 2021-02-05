@@ -8,6 +8,7 @@ It includes the following features:
 
 - Linting with the `ts-standard` plugin
 - Testing with `mocha` and `chai`
+- Bundling to ES5 via webpack
 
 ## Installation
 
@@ -32,7 +33,5 @@ We recommend that you install a `ts-standard` compatible plugin to your IDE. Our
 ## Building
 
 When you're ready to transpile the project, use the `npm run build` command. This will output an ES5 bundle of the TypeScript into the `dist` folder. You can then rename this and add it to the relevant place in our CDN or serve it directly via your app if appropriate.
-
-Modules are output in CommonJS format.
 
 **NB:** You can rename the output file from `bundle.js` by updating `output.filename` in `webpack.config.js` 
